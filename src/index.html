@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FileOrganizer</title>
+    <meta
+    http-equiv="Content-Security-Policy"
+    content="script-src 'self' 'unsafe-inline'"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link  href="input.css" rel="stylesheet"  >
+    <script src="renderer.js"></script>
+  </head>
+  <body>
+    <section>
+      <div class="main_section">
+        <img class = "logo" src="assets/logo.png" alt="logo">
+        <div class="title">FileOrganizer</div>
+        <br>
+        <p class="file-path">
+          <strong>File: </strong>
+        <span id="selected-folder"></span>
+        </p>
+        
+        <br>
+        <button id="open-button" class="w-16 h-16" onclick="openFolder()">Open</button>
+        <form id="boxed">
+          <input type="checkbox" id="largecheckbox">
+          <input type="text" id ="dirName" placeholder="Type Dir Name">
+        </form>
+        <button id="sort-button" onclick="sortFiles()">Sort</button>
+        <button id="sort-button" onclick="undoSort()">Undo</button>
+        <label id="message"></label>
+
+      </div>
+     
+
+    </section>
+    
+    
+    
+  </body>
+
+</html>
